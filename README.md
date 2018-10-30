@@ -2,7 +2,7 @@
 
 THP/MARDI/SEMAINE-5
 
-Projet de site internet moche réalisé par Charles Belpois
+Projet de site internet réalisé par Lionel Renard 
 
 Lien Heroku:
-https://site-00s.herokuapp.com/
+https://git.heroku.com/i-love-true-form.git

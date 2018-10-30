@@ -1,0 +1,66 @@
+<br>
+<h1><u>SITE MOCHE DES ANNEES 90</u></h1>
+<center>
+<br>
+<h1>Avé étranger.</h1>
+<br>
+
+<!--HTML version-->
+<form action="/users" method="post">
+	
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<h3>Quel est ton patronyme?</h3>
+	<input type="text" name="first_name" placeholder="Name">
+	<br /><br />
+	<h3>Et ton adresse de courrier éléctronique?</h3>
+	<input type="text" name="email" placeholder="email adress">
+	<br /><br />
+	<h3>Quid de ta biographie?</h3>
+	<input type="text" name="bio" placeholder="bio">
+	<br /><br />
+	<input type="submit" name="Envoyer">
+</form>
+
+<!--form_tag version-->
+<!--
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+<h3>Quel est ton patronyme?</h3>
+  <%= text_field_tag 'username', @post.username %>
+<br /><br />
+
+<h3>Et ton adresse de courrier éléctronique?</h3>
+<%= text_field_tag 'email', @post.email %>
+
+<br /><br />
+
+<h3>Quid de ta biographie?</h3>
+<%= text_area_tag 'bio', @post.bio %>
+
+<br /><br />
+
+<%= submit_tag "Create Post" %>
+<% end %>
+-->
+
+<!--form_for version-->
+<!--
+<%= form_for @user, url: {action: "create"}, html: {class:"nifty_form"} do |f| %>
+	<h3>Quel est ton patronyme?</h3>
+	<%= f.text_field :username %>
+	<br /><br />
+	<h3>Et ton adresse de courrier éléctronique?</h3>
+	<%= f.text_field :email %>
+	<br /><br />
+	<h3>Quid de ta biographie?</h3>
+	<%= f.text_area :bio %>
+	<br /><br />
+	<%= f.submit "create" %>
+	<% end %>
+-->
+</center>
+
+<br /><br />
+
+<img src ="https://media.giphy.com/media/J0WeVOLjuqW2I/giphy.gif" style="float: left; height: 350px; width: 350px; margin-left: 70px">
+
+<img src="https://interactive.guim.co.uk/embed/2014/dec/clipartguide/images/image02.gif" style="height: 400px; width: 150px; margin-right:50px; float: right">
